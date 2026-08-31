@@ -13,7 +13,7 @@ const links = [
 export default function Nav() {
   const pathname = usePathname();
   return (
-    <nav className="max-w-3xl mx-auto px-6 py-8 flex items-center justify-between">
+    <nav className="max-w-3xl mx-auto px-6 py-8 flex items-center gap-16">
       <Link
         href="/"
         className="text-sm font-medium tracking-wide text-[#1A1A1A]"
