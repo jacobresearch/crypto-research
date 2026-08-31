@@ -17,7 +17,6 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="max-w-3xl mx-auto px-6 pt-20 pb-28">
-        <p className="text-sm text-[#2D4A6B] mb-6 font-medium">London</p>
         <h1
           className="text-6xl md:text-7xl leading-tight mb-6"
           style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
