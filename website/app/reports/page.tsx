@@ -104,7 +104,12 @@ export default function ReportsPage() {
           Commissioned institutional research on blockchain protocols and infrastructure.
         </p>
         <div className="space-y-6">
-          {protocolResearch.map((r) => (
+          {[...protocolResearch]
+            .sort((a, b) => {
+              const parse = (d: string) => new Date(`1 ${d}`).getTime();
+              return parse(b.date) - parse(a.date);
+            })
+            .map((r) => (
             <Link key={r.slug} href={`/reports/${r.slug}`} className="group block">
               <div className="flex items-start justify-between gap-4">
                 <div>
