@@ -174,4 +174,16 @@ export const protocolResearch: ProtocolReport[] = [
     ],
     url: "https://www.coindesk.com/research/tron-network-primer",
   },
+  {
+    slug: "goplus-security",
+    title: "GoPlus Security",
+    date: "Nov 2025",
+    description: [
+      "Launched in 2020, GoPlus Security is a decentralised Web3 security infrastructure designed to provide real-time protection against on-chain threats and enhance transaction integrity across the blockchain ecosystem. Positioned as a security layer for Web3, GoPlus operates across more than 40 blockchains, including Ethereum, BNB Chain, Solana and Optimism. Its modular architecture — comprising the Security Data Layer, Security Compute Layer, and SecWare Protocol — enables trustless, data-driven intelligence that identifies and mitigates risks across networks and users.",
+      "GoPlus's product suite includes the GoPlus App, a one-stop security hub for users; the SafeToken Protocol, which standardises secure token issuance and liquidity management; and GoPlus Intelligence, a collection of AI-powered APIs and SDKs that deliver security data to developers, wallets, and institutions. These products are integrated across the Web3 ecosystem, including with platforms such as Binance, MetaMask, and Trust Wallet, collectively helping protect billions in on-chain assets.",
+      "In 2025, GoPlus introduced its native token, $GPS, which powers payments, staking, computation, and governance within the network. The token underpins the ecosystem's incentive model, enabling access to security services, rewarding contributors, and aligning stakeholders through staking and slashing mechanisms. As of October 2025, GoPlus has generated $4.7M in total revenue across its three product lines, led by the GoPlus App.",
+      "Looking ahead, GoPlus aims to strengthen its position as a decentralised and AI-driven security layer for Web3 by advancing sequencer-level risk control mechanisms, expanding cross-chain integrations, and launching its Governance Portal to enable community-led decision-making. Through continued development of its AI-enabled security tools and compliance with frameworks such as the EU's MiCAR, GoPlus seeks to contribute to a safer and more transparent blockchain ecosystem.",
+    ],
+    url: "https://www.coindesk.com/research/protocol-research-goplus-security",
+  },
 ];
