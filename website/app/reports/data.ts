@@ -6,10 +6,7 @@ export type Report = {
   kind: "web" | "pdf" | "medium";
 };
 
-export type SeriesKey =
-  | "exchange-review"
-  | "digital-asset-management-review"
-  | "stablecoins-report";
+export type SeriesKey = "exchange-review" | "stablecoins-report";
 
 export const seriesMeta: Record<
   SeriesKey,
@@ -20,13 +17,7 @@ export const seriesMeta: Record<
     description:
       "Monthly analysis of centralized exchange trading volumes and market share.",
   },
-  "digital-asset-management-review": {
-    label: "Digital Asset Management Review",
-    description:
-      "Monthly coverage of digital asset investment products, AUM, and fund flows.",
-    note: "Published October 2022 – February 2024.",
-  },
-  "stablecoins-report": {
+"stablecoins-report": {
     label: "Stablecoins Report",
     description:
       "Monthly analysis of stablecoin market capitalisation, volumes, and regulatory developments.",
@@ -89,25 +80,6 @@ export const exchangeReview: Report[] = [
   { month: "Jul", year: 2026, url: "https://data.coindesk.com/reports/exchange-review-july-2026", insight: "Combined volume fell nearly 24% to $3.76T, the lowest level since November 2023.", kind: "web" },
 ];
 
-export const digitalAssetManagementReview: Report[] = [
-  { month: "Oct", year: 2022, url: "https://data.coindesk.com/reports/digital-asset-management-review-october-2022", insight: "Institutional trading volumes hit historic lows; average daily volume fell 34.1% to $61.3m.", kind: "web" },
-  { month: "Nov", year: 2022, url: "https://data.coindesk.com/reports/digital-asset-management-review-november-2022", insight: "AUM hit its lowest level since Dec 2020 (-14.5%) on FTX-exposure fears, though volumes rose 127% to $139m/day.", kind: "web" },
-  { month: "Dec", year: 2022, url: "https://data.coindesk.com/reports/digital-asset-management-review-december-2022", insight: "AUM reached $19.7bn (-55.2% from January's peak); 2022 average daily volumes fell 74.1% to $203m vs $781m in 2021.", kind: "web" },
-  { month: "Jan", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review-january-2023", insight: "Overview of the global digital-asset investment-product landscape and adoption metrics.", kind: "web" },
-  { month: "Feb", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review-february-2023", insight: "Average daily aggregate product volumes dipped 9.39% to $73.3m, though volumes rebounded vs. the prior two months.", kind: "web" },
-  { month: "Mar", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review-march-23", insight: "AUM surged 10.9% MoM / 60.6% YoY; Bitcoin products hit their highest dominance since June 2022.", kind: "web" },
-  { month: "Apr", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review", insight: "AUM rose 6.94% to $35.6bn — a fifth straight month of expansion; net inflows were the highest since Jan 2023.", kind: "web" },
-  { month: "May", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review-may-2023", insight: "AUM shrank 8.92% to $30.6bn — the first monthly decrease of 2023.", kind: "web" },
-  { month: "Jun", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review-june-2023", insight: "AUM rose 9.05% to $33.4bn (+69.5% YTD), driven by BlackRock's spot Bitcoin ETF filing.", kind: "web" },
-  { month: "Jul", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review-july-2023", insight: "The US held $26.3bn AUM / 78% market share, ~74% of that via Grayscale.", kind: "web" },
-  { month: "Aug", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review-august-2023", insight: "AUM declined as Bitcoin dropped to a low of $25,345 on Aug 17.", kind: "web" },
-  { month: "Sep", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review-september-2023", insight: "AUM fell 5.86% to $29.8bn — a second consecutive monthly decrease.", kind: "web" },
-  { month: "Oct", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review-october-2023", insight: "AUM rose 6.74% to $31.7bn — the first increase since July.", kind: "web" },
-  { month: "Nov", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review-november-2023", insight: "AUM grew 14.1% to $43.3bn on optimism over potential spot BTC/ETH ETF approvals.", kind: "web" },
-  { month: "Dec", year: 2023, url: "https://data.coindesk.com/reports/digital-asset-management-review-december-2023", insight: "Q4 2023 volumes and AUM grew strongly; December's average daily volume rose 33.93% to $659.5m, the largest rise since Jan 2022.", kind: "web" },
-  { month: "Jan", year: 2024, url: "https://data.coindesk.com/reports/digital-asset-management-review-january-2024", insight: "Average daily volumes rose 224% to $2.19bn despite a slight dip in Bitcoin spot-ETF assets.", kind: "web" },
-  { month: "Feb", year: 2024, url: "https://data.coindesk.com/reports/digital-asset-management-review-february-2024", insight: "AUM rose 27% to $65.67bn on Bitcoin momentum and expanding US spot-ETF adoption.", kind: "web" },
-];
 
 export const stablecoinsReport: Report[] = [
   { month: "Jan", year: 2023, url: "https://data.coindesk.com/reports/stablecoins-report-january-2023", insight: "Market cap peaked at $188bn on Apr 2, 2022; report covers trends by collateral type and pegged asset.", kind: "web" },
@@ -163,11 +135,7 @@ export function allReports() {
       ...r,
       series: "exchange-review" as SeriesKey,
     })),
-    ...digitalAssetManagementReview.map((r) => ({
-      ...r,
-      series: "digital-asset-management-review" as SeriesKey,
-    })),
-    ...stablecoinsReport.map((r) => ({
+...stablecoinsReport.map((r) => ({
       ...r,
       series: "stablecoins-report" as SeriesKey,
     })),

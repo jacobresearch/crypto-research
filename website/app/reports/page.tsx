@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   exchangeReview,
-  digitalAssetManagementReview,
   stablecoinsReport,
   seriesMeta,
   makeSlug,
@@ -96,13 +95,6 @@ export default function ReportsPage() {
       </p>
 
       <ReportSeries seriesKey="exchange-review" reports={exchangeReview} />
-
-      <hr className="border-[#E0DDD8] mb-20" />
-
-      <ReportSeries
-        seriesKey="digital-asset-management-review"
-        reports={digitalAssetManagementReview}
-      />
 
       <hr className="border-[#E0DDD8] mb-20" />
 
