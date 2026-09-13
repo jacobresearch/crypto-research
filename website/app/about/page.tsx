@@ -59,22 +59,25 @@ export default function AboutPage() {
       <section className="mb-16">
         <div className="space-y-4 text-[#444] leading-relaxed max-w-2xl">
           <p>
-            I am a Research Analyst based in London, focused on the intersection
-            of digital assets and global financial markets. My work spans
-            on-chain data analysis, macro themes, and the narratives that move
-            markets before they show up in prices.
+            Jacob Joseph is a Senior Research Analyst at CoinDesk, specialising
+            in digital asset markets with nearly five years of experience in the
+            space. He leads CoinDesk's monthly market reports covering
+            centralized exchange dynamics, stablecoin markets, and on-chain
+            data — tracking the narratives that move prices before they reach
+            the mainstream.
           </p>
           <p>
-            I publish institutional research reports, maintain data pipelines,
-            and write independently on emerging trends across crypto, equities,
-            and macro. My goal is to cut through noise and surface the signals
-            that matter.
+            His current research focus spans tokenized assets, DeFi
+            applications, and Layer-1 network dynamics, while keeping a close
+            eye on the macro forces shaping crypto cycles. Beyond digital
+            assets, he follows emerging sectors at the frontier of finance and
+            technology — including AI, energy, FinTech, and quantum computing —
+            and the ways they are converging with decentralized systems.
           </p>
           <p>
-            Previously, I worked in traditional finance covering equities and
-            macro. The move into digital assets was driven by a conviction that
-            crypto is the most interesting laboratory for financial and monetary
-            experimentation happening right now.
+            Before CoinDesk, Jacob founded and led the Blockchain Society at
+            the University of Sussex while completing his postgraduate studies
+            in FinTech, Investment, and Risk Analysis.
           </p>
         </div>
       </section>
