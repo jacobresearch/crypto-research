@@ -11,17 +11,17 @@ const monthOrder = [
   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
 ];
 
-function getLatestReport() {
-  return allReports().sort((a, b) => {
-    if (b.year !== a.year) return b.year - a.year;
-    return monthOrder.indexOf(b.month) - monthOrder.indexOf(a.month);
-  })[0];
+function getLatestReports(n = 3) {
+  return allReports()
+    .sort((a, b) => {
+      if (b.year !== a.year) return b.year - a.year;
+      return monthOrder.indexOf(b.month) - monthOrder.indexOf(a.month);
+    })
+    .slice(0, n);
 }
 
 export default function Home() {
-  const latest = getLatestReport();
-  const { label } = seriesMeta[latest.series];
-  const slug = makeSlug(latest.series, latest.month, latest.year);
+  const latest = getLatestReports();
 
   return (
     <>
@@ -53,20 +53,28 @@ export default function Home() {
         </h2>
         <p className="text-sm text-[#888] mb-10">Most recent research and reports.</p>
 
-        <Link href={`/reports/${slug}`} className="group block">
-          <p className="text-xs font-medium text-[#2D4A6B] uppercase tracking-wide mb-2">
-            {label}
-          </p>
-          <h3
-            className="text-xl mb-3 group-hover:text-[#2D4A6B] transition-colors"
-            style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
-          >
-            {latest.month} {latest.year}
-          </h3>
-          <p className="text-sm text-[#555] leading-relaxed max-w-xl">
-            {latest.insight}
-          </p>
-        </Link>
+        <div className="space-y-8">
+          {latest.map((r) => {
+            const { label } = seriesMeta[r.series];
+            const slug = makeSlug(r.series, r.month, r.year);
+            return (
+              <Link key={slug} href={`/reports/${slug}`} className="group block">
+                <p className="text-xs font-medium text-[#2D4A6B] uppercase tracking-wide mb-1">
+                  {label}
+                </p>
+                <h3
+                  className="text-xl mb-2 group-hover:text-[#2D4A6B] transition-colors"
+                  style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
+                >
+                  {r.month} {r.year}
+                </h3>
+                <p className="text-sm text-[#555] leading-relaxed max-w-xl">
+                  {r.insight}
+                </p>
+              </Link>
+            );
+          })}
+        </div>
       </section>
     </>
   );
