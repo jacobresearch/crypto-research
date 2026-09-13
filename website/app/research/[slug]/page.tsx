@@ -49,7 +49,7 @@ export default async function ArticlePage({
       <p className="text-xs text-[#AAA] mb-10">{article.date}</p>
 
       <p className="text-[#444] leading-relaxed max-w-xl mb-12">
-        Thought piece on {article.topics}.
+        {article.description ?? `Thought piece on ${article.topics}.`}
       </p>
 
       <hr className="border-[#E0DDD8] mb-10" />
@@ -60,7 +60,7 @@ export default async function ArticlePage({
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 text-sm font-medium text-[#1A1A1A] border border-[#1A1A1A] px-5 py-2.5 hover:bg-[#1A1A1A] hover:text-[#FAFAF8] transition-colors"
       >
-        Read on Medium →
+        Read on {article.source ?? "Medium"} →
       </a>
     </article>
   );

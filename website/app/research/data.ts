@@ -4,6 +4,8 @@ export type Article = {
   date: string;
   topics: string;
   url: string;
+  description?: string;
+  source?: string;
 };
 
 export const articles: Article[] = [
@@ -69,6 +71,15 @@ export const articles: Article[] = [
     date: "31 Aug 2022",
     topics: "the Jackson Hole-driven sell-off, upcoming hard forks, and Binance's derivatives market",
     url: "https://medium.com/@jacobjoseph97/market-spotlight-jackson-hole-sell-off-hard-forks-and-inside-binance-derivatives-f62f875b3bf3",
+  },
+  {
+    slug: "market-spotlight-the-19-billion-liquidation-that-shook-crypto",
+    title: "The $19 Billion Liquidation That Shook Crypto",
+    date: "Oct 2025",
+    topics: "",
+    description: "A historic $19 billion in leveraged positions vanished within 24 hours, exposing how macro shocks, leverage, and thin liquidity combined to trigger crypto's largest-ever liquidation event.",
+    source: "CoinDesk",
+    url: "https://www.coindesk.com/research/market-spotlight-the-19-billion-liquidation-that-shook-crypto",
   },
   {
     slug: "market-spotlight-the-merge-cexs-and-sanctions",

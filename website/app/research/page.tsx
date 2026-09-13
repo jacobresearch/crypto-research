@@ -33,7 +33,7 @@ export default function ResearchPage() {
                   {a.title}
                 </h2>
                 <p className="text-sm text-[#888] leading-relaxed">
-                  Thought piece on {a.topics}.
+                  {a.description ?? `Thought piece on ${a.topics}.`}
                 </p>
               </div>
               <span className="text-xs text-[#AAA] whitespace-nowrap pt-0.5">
