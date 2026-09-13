@@ -254,4 +254,17 @@ export const protocolResearch: ProtocolReport[] = [
     ],
     url: "https://www.coindesk.com/research/digital-assets-quarterly-review-and-outlook-q1",
   },
+  {
+    slug: "cex-landscape-binance-case-study",
+    title: "The Evolution of the Crypto CEX Landscape: A Case Study on Binance",
+    date: "Jul 2026",
+    description: [
+      "Binance remains crypto's leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "Binance remains the dominant centralised crypto exchange, leading both spot and derivatives markets in 2026. Its leadership is supported by superior liquidity, tighter spreads, lower slippage, and deep order books across BTC, ETH, SOL, and a broad range of altcoins.",
+      "The exchange has expanded into real-world asset trading, including commodity and equity-linked perpetuals, bStocks, and access to real US shares for eligible users.",
+      "Binance is evolving into a broader financial ecosystem, with products spanning payments, savings, yield, cards, transfers, fiat rails, and traditional-market access.",
+      "With more than 316M registered users, Binance has a large distribution advantage as crypto exchanges increasingly converge with banks, brokerages, and fintech platforms.",
+    ],
+    url: "https://www.coindesk.com/research/the-evolution-of-the-crypto-cex-landscape-a-case-study-on-binance",
+  },
 ];
