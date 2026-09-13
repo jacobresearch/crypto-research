@@ -164,4 +164,14 @@ export const protocolResearch: ProtocolReport[] = [
     ],
     url: "https://www.coindesk.com/research/bahamut-protocol-reseach",
   },
+  {
+    slug: "tron-network-primer",
+    title: "TRON Network",
+    date: "2025",
+    description: [
+      "Launched in 2018, TRON is an EVM-compatible Layer-1 protocol focused on financial inclusion and serving as a global liquidity rail. It uses a bandwidth and energy system for largely fee-free transactions, and its DPoS consensus, managed by 27 Super Representatives, enables high transaction throughput (up to 2000 TPS).",
+      "Since its mainnet launch, TRON has processed over 10B transactions, with over 70% being direct peer-to-peer transfers, and facilitated over $15T in stablecoin transactions. As of July 2025, the network has over 320M accounts and adds 2.3M wallets daily, making it a top chain for new wallet creation. TRON accounts for over 30% of global stablecoin market capitalisation, highlighting its role in stablecoin settlements, especially for lower-value transfers (around 60% of its USDT transactions are under $1,000).",
+    ],
+    url: "https://www.coindesk.com/research/tron-network-primer",
+  },
 ];
