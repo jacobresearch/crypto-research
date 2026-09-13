@@ -201,4 +201,18 @@ export const protocolResearch: ProtocolReport[] = [
     ],
     url: "https://www.coindesk.com/research/kucoin-hits-record-market-share-as-2025-volumes-outpace-crypto-market",
   },
+  {
+    slug: "goplus-security-h2-2025",
+    title: "GoPlus Security H2 2025: Executing Through Market Stress as Web3 Losses Hit $4B",
+    date: "Feb 2026",
+    description: [
+      "In the second half of 2025, GoPlus Security continued to reinforce its position as a foundational infrastructure layer within the Web3 security stack. Rather than signalling a strategic shift, H2 was defined by roadmap execution, incremental product expansion, and deeper ecosystem integration across wallets, blockchains, and developer platforms. While $GPS declined 77.3% during H2 amid broader market stress and scheduled supply unlocks, ecosystem fundamentals continued to strengthen.",
+      "GoPlus Intelligence remained the primary interface between the network and downstream users, delivering real-time security services across token analysis, address risk assessment, phishing detection, and transaction monitoring. During H2, the API suite expanded with the launch of the Transaction Simulation and Address Scan APIs, extending GoPlus's coverage to pre-signature transaction behaviour and comprehensive address-level risk profiling. While overall API usage declined modestly compared to H1, daily request volumes remained elevated, reflecting sustained demand for composable, real-time security primitives embedded directly into Web3 workflows.",
+      "The SafeToken Protocol emerged as a key growth engine during the period. Total value locked in the SafeToken Locker increased 21.6% to $40.2M in H2, reaching an all-time high of $66M in October. Growth was supported by the introduction of more flexible vesting and price-based unlocking mechanisms, as well as expanded deployment across additional chains. Adoption by chains, launchpads, and token infrastructure providers reinforced SafeToken's role as a core tool for secure token issuance, vesting, and distribution.",
+      "At the application layer, traction for the GoPlus App softened materially, with H2 revenue declining significantly compared to the prior half, though it remains the protocol's largest historical revenue contributor. In contrast, infrastructure participation remained stable and continued to scale. SecHub deployments surpassed 70,000 instances by year-end, GoPlus AVS operators held steady at 36, and total ETH restaked across the AVS reached 1.1M ETH, strengthening the economic security underpinning the network.",
+      "Product development accelerated through H2 with the launch of the GoPlus B2B platform, expanded support for emerging transaction standards such as EIP-7702 and x402, and the rollout of a next-generation security engine. GoPlus also advanced AI-native security initiatives, including the private beta of the DeepScan engine and the launch of AgentGuard for AI agents, alongside progress on verifiable security and compliance-focused tools.",
+      "Looking ahead, as Web3 security losses reached $4.0B in 2025, demand for protocol-embedded, real-time security infrastructure is accelerating. Positioned at the intersection of chain-level security, AI-native risk, and aligned ecosystem incentives, GoPlus is well placed to play a central role in the next phase of decentralised security adoption.",
+    ],
+    url: "https://www.coindesk.com/research/goplus-security-h2-2025",
+  },
 ];
