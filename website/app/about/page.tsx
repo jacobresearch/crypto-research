@@ -6,18 +6,42 @@ export const metadata: Metadata = {
 
 const experience = [
   {
-    period: "2023 — Present",
-    role: "Research Analyst",
-    org: "Independent",
-    description:
-      "Publishing institutional research on digital assets and macro markets. Maintaining on-chain data pipelines and producing monthly market reports.",
+    period: "Jan 2025 — Present",
+    role: "Senior Research Analyst",
+    org: "CoinDesk",
   },
   {
-    period: "2021 — 2023",
-    role: "Junior Analyst",
-    org: "Financial Services",
-    description:
-      "Covered equities and macro themes. Built quantitative models for market analysis and contributed to weekly research publications.",
+    period: "Feb 2022 — Dec 2024",
+    role: "Research Analyst",
+    org: "CCData",
+  },
+  {
+    period: "Sept 2020 — Jul 2021",
+    role: "President, Blockchain Society",
+    org: "University of Sussex",
+  },
+  {
+    period: "Oct 2019 — Apr 2020",
+    role: "Finance Intern",
+    org: "Daikin Middle East and Africa",
+  },
+];
+
+const education = [
+  {
+    period: "2020 — 2021",
+    qualification: "MSc FinTech, Risk and Investment Analysis",
+    institution: "University of Sussex",
+  },
+  {
+    period: "2015 — 2018",
+    qualification: "Affiliate",
+    institution: "ACCA",
+  },
+  {
+    period: "2015 — 2018",
+    qualification: "Bachelor of Commerce",
+    institution: "Manipal University, Dubai",
   },
 ];
 
@@ -65,20 +89,40 @@ export default function AboutPage() {
         >
           Experience
         </h2>
-        <div className="space-y-10">
-          {experience.map(({ period, role, org, description }) => (
-            <div key={period} className="flex gap-8">
-              <div className="w-36 shrink-0 pt-0.5">
+        <div className="space-y-8">
+          {experience.map(({ period, role, org }) => (
+            <div key={`${role}-${org}`} className="flex gap-8">
+              <div className="w-44 shrink-0 pt-0.5">
                 <span className="text-xs text-[#AAA]">{period}</span>
               </div>
               <div>
-                <p className="text-sm font-medium text-[#1A1A1A] mb-0.5">
-                  {role}
-                </p>
-                <p className="text-xs text-[#2D4A6B] font-medium mb-2">{org}</p>
-                <p className="text-sm text-[#555] leading-relaxed">
-                  {description}
-                </p>
+                <p className="text-sm font-medium text-[#1A1A1A] mb-0.5">{role}</p>
+                <p className="text-xs text-[#2D4A6B] font-medium">{org}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <hr className="border-[#E0DDD8] mb-16" />
+
+      {/* EDUCATION */}
+      <section className="mb-16">
+        <h2
+          className="text-2xl mb-10"
+          style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
+        >
+          Education
+        </h2>
+        <div className="space-y-8">
+          {education.map(({ period, qualification, institution }) => (
+            <div key={`${qualification}-${institution}`} className="flex gap-8">
+              <div className="w-44 shrink-0 pt-0.5">
+                <span className="text-xs text-[#AAA]">{period}</span>
+              </div>
+              <div>
+                <p className="text-sm font-medium text-[#1A1A1A] mb-0.5">{qualification}</p>
+                <p className="text-xs text-[#2D4A6B] font-medium">{institution}</p>
               </div>
             </div>
           ))}
