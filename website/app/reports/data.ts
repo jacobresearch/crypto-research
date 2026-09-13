@@ -135,9 +135,33 @@ export function allReports() {
       ...r,
       series: "exchange-review" as SeriesKey,
     })),
-...stablecoinsReport.map((r) => ({
+    ...stablecoinsReport.map((r) => ({
       ...r,
       series: "stablecoins-report" as SeriesKey,
     })),
   ];
 }
+
+// ─── Protocol Research ────────────────────────────────────────────────────────
+
+export type ProtocolReport = {
+  slug: string;
+  title: string;
+  date: string;
+  description: string[];
+  url: string;
+};
+
+export const protocolResearch: ProtocolReport[] = [
+  {
+    slug: "bahamut-blockchain-validator-incentives",
+    title: "Bahamut Blockchain: A New Playbook for Validator Incentives",
+    date: "2023",
+    description: [
+      "Bahamut is an EVM-compatible Layer-1 blockchain that launched in May 2023, introducing the industry's first Proof of Stake and Activity (PoSA) consensus mechanism. Unlike traditional Proof of Stake models that reward validators solely for token staking, PoSA creates a dual-incentive system that rewards participants not only for staking tokens but for deploying smart contracts that drive actual usage.",
+      "This activity-weighted approach aligns validator economics with actual network utility, incentivising validators to build and deploy smart contracts that drive meaningful user engagement rather than simply maximising stake.",
+      "This report provides institutional-grade due diligence on Bahamut's validator design, tokenomics, technical architecture, and ecosystem adoption metrics. Commissioned by Bahamut and produced by CoinDesk Research, it offers a neutral assessment of the protocol's strategic positioning within the competitive Layer-1 landscape, targeting institutional allocators, developers, and market participants evaluating next-generation blockchain infrastructure.",
+    ],
+    url: "https://www.coindesk.com/research/bahamut-protocol-reseach",
+  },
+];

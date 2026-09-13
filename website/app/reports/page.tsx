@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   exchangeReview,
   stablecoinsReport,
+  protocolResearch,
   seriesMeta,
   makeSlug,
   type Report,
@@ -93,6 +94,35 @@ export default function ReportsPage() {
       <p className="text-sm text-[#888] mb-16">
         Institutional research and monthly market reports authored at CCData / CoinDesk Data since February 2022.
       </p>
+
+      {/* PROTOCOL RESEARCH */}
+      <section className="mb-20">
+        <h2 className="text-2xl mb-1" style={serif}>
+          Protocol Research
+        </h2>
+        <p className="text-sm text-[#888] mb-8">
+          Commissioned institutional research on blockchain protocols and infrastructure.
+        </p>
+        <div className="space-y-6">
+          {protocolResearch.map((r) => (
+            <Link key={r.slug} href={`/reports/${r.slug}`} className="group block">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-sm font-medium group-hover:text-[#2D4A6B] transition-colors mb-1">
+                    {r.title}
+                  </h3>
+                  <p className="text-sm text-[#555] leading-relaxed">
+                    {r.description[0].slice(0, 120)}…
+                  </p>
+                </div>
+                <span className="text-xs text-[#AAA] whitespace-nowrap pt-0.5">{r.date}</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <hr className="border-[#E0DDD8] mb-20" />
 
       <ReportSeries seriesKey="exchange-review" reports={exchangeReview} />
 
