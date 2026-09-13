@@ -156,7 +156,7 @@ export const protocolResearch: ProtocolReport[] = [
   {
     slug: "bahamut-blockchain-validator-incentives",
     title: "Bahamut Blockchain: A New Playbook for Validator Incentives",
-    date: "2023",
+    date: "Jun 2025",
     description: [
       "Bahamut is an EVM-compatible Layer-1 blockchain that launched in May 2023, introducing the industry's first Proof of Stake and Activity (PoSA) consensus mechanism. Unlike traditional Proof of Stake models that reward validators solely for token staking, PoSA creates a dual-incentive system that rewards participants not only for staking tokens but for deploying smart contracts that drive actual usage.",
       "This activity-weighted approach aligns validator economics with actual network utility, incentivising validators to build and deploy smart contracts that drive meaningful user engagement rather than simply maximising stake.",
@@ -167,7 +167,7 @@ export const protocolResearch: ProtocolReport[] = [
   {
     slug: "tron-network-primer",
     title: "TRON Network",
-    date: "2025",
+    date: "Jul 2025",
     description: [
       "Launched in 2018, TRON is an EVM-compatible Layer-1 protocol focused on financial inclusion and serving as a global liquidity rail. It uses a bandwidth and energy system for largely fee-free transactions, and its DPoS consensus, managed by 27 Super Representatives, enables high transaction throughput (up to 2000 TPS).",
       "Since its mainnet launch, TRON has processed over 10B transactions, with over 70% being direct peer-to-peer transfers, and facilitated over $15T in stablecoin transactions. As of July 2025, the network has over 320M accounts and adds 2.3M wallets daily, making it a top chain for new wallet creation. TRON accounts for over 30% of global stablecoin market capitalisation, highlighting its role in stablecoin settlements, especially for lower-value transfers (around 60% of its USDT transactions are under $1,000).",
