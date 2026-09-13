@@ -1,18 +1,28 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { allReports, makeSlug, seriesMeta } from "./reports/data";
 
 export const metadata: Metadata = {
   title: "Jacob Joseph — Research Analyst",
 };
 
-function EmptyState({ label }: { label: string }) {
-  return (
-    <div className="border border-dashed border-[#E0DDD8] px-8 py-12 text-center">
-      <p className="text-sm text-[#AAA]">{label}</p>
-    </div>
-  );
+const monthOrder = [
+  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+];
+
+function getLatestReport() {
+  return allReports().sort((a, b) => {
+    if (b.year !== a.year) return b.year - a.year;
+    return monthOrder.indexOf(b.month) - monthOrder.indexOf(a.month);
+  })[0];
 }
 
 export default function Home() {
+  const latest = getLatestReport();
+  const { label } = seriesMeta[latest.series];
+  const slug = makeSlug(latest.series, latest.month, latest.year);
+
   return (
     <>
       {/* HERO */}
@@ -41,10 +51,22 @@ export default function Home() {
         >
           Latest
         </h2>
-        <p className="text-sm text-[#888] mb-10">
-          Most recent research and reports.
-        </p>
-        <EmptyState label="Coming soon — first piece in progress" />
+        <p className="text-sm text-[#888] mb-10">Most recent research and reports.</p>
+
+        <Link href={`/reports/${slug}`} className="group block">
+          <p className="text-xs font-medium text-[#2D4A6B] uppercase tracking-wide mb-2">
+            {label}
+          </p>
+          <h3
+            className="text-xl mb-3 group-hover:text-[#2D4A6B] transition-colors"
+            style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
+          >
+            {latest.month} {latest.year}
+          </h3>
+          <p className="text-sm text-[#555] leading-relaxed max-w-xl">
+            {latest.insight}
+          </p>
+        </Link>
       </section>
     </>
   );
