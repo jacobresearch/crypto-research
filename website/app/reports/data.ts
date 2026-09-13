@@ -227,4 +227,17 @@ export const protocolResearch: ProtocolReport[] = [
     ],
     url: "https://www.coindesk.com/research/digital-assets-etp-landscape-past-present-and-future",
   },
+  {
+    slug: "stablecoin-landscape-north-america",
+    title: "The Definitive Stablecoin Landscape Series: North America",
+    date: "Mar 2026",
+    description: [
+      "As stablecoins evolve into core financial infrastructure, North America leads. This report maps the regulation, market shifts, and players driving adoption.",
+      "Stablecoins are into their third phase of evolution — the institutionalisation era — transitioning from crypto-native tools into core financial infrastructure. What began as a mechanism for trading and liquidity has evolved into a foundational layer for payments, cross-border settlement, and on-chain capital markets, driven by regulatory clarity and growing participation from traditional financial institutions.",
+      "Within this shift, North America has emerged as the most important region for stablecoin development, leading in regulatory frameworks, financial infrastructure, custody solutions, and institutional distribution. A defining trend of this phase is the migration toward regulated, onshore stablecoins. As adoption expands into corporate treasury and payments, institutions are prioritising transparency and compliance.",
+      "This shift is evident in market structure, with USDT's dominance declining from 71.1% to 59.9%, while alternatives including USDC, RLUSD and PYUSD have steadily gained share, reflecting a broader reallocation toward compliant, institution-ready issuers.",
+      "RLUSD's strategic advantage lies in its integration with Ripple's broader financial ecosystem, which provides immediate access to established payment corridors, financial institutions, and enterprise clients. This allows RLUSD to anchor adoption in real transactional demand, rather than relying solely on exchange-driven liquidity. Early traction, including surpassing $1B in market capitalisation within its first year, underscores the growing demand for compliant, institution-ready stablecoins.",
+    ],
+    url: "https://www.coindesk.com/research/the-definitive-stablecoin-landscape-series-north-america",
+  },
 ];
