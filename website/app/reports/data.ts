@@ -186,4 +186,19 @@ export const protocolResearch: ProtocolReport[] = [
     ],
     url: "https://www.coindesk.com/research/protocol-research-goplus-security",
   },
+  {
+    slug: "kucoin-record-market-share-2025",
+    title: "KuCoin Hits Record Market Share as 2025 Volumes Outpace Crypto Market",
+    date: "Dec 2025",
+    description: [
+      "KuCoin cemented its spot among top 10 centralised exchanges by volume. Driven by renewed digital asset interest following last November's U.S. political shifts, cumulative trading volumes in spot and perpetual markets crossed $1.25 trillion, averaging $114B per month. The spot market alone averaged $46.1B, a fourfold rise since 2023.",
+      "This exceptional growth wasn't a fleeting surge but a sustained phenomenon, characterised by a distinct \"stair-step\" progression in trading volumes, comprising notable upticks followed by periods of robust stability at higher levels. Such a pattern suggests a steadily expanding user engagement, diverging from the volatile boom-and-bust cycles often seen in crypto markets. This consistency points to platform maturation with a growing sticky user base.",
+      "Activity remained remarkably resilient during the historically quiet periods. Defying the \"Summer lull,\" volumes nearly doubled between June and August, led by a relatively busier altcoin market. Volume also picked up during market swoons in November and the multi-week period from February to early April.",
+      "This resilience is consistent with KuCoin's strategic focus on investor trust, notably through its $2 billion \"Trust Project\" initiated earlier this year, which focuses on enhancing transparency, security, and advancing compliance.",
+      "The volume profile showcases a diverse array of trader preferences. While Layer 1s and memecoins remained the bread and butter, bringing the most volume, traders also gravitated to tokens linked to artificial intelligence and specific DEX categories. This shows a diverse trading community that marches its own beat, although much of the focus has been on established altcoins rather than novel sectors like Decentralised Science.",
+      "Order book depth for top altcoins has held steady in recent weeks even as the overall market liquidity conditions have deteriorated since the Oct. 10 crash. The resilience is consistent with the stability observed on Binance and OKX and stands out compared to sharp declines in 1% depth on major exchanges such as Coinbase, Bitstamp and Bybit.",
+      "The exchange has consistently surpassed the global average for new monthly listings, strengthening its appeal as an altcoin venue. This aggressive approach of listing new coins, often at double the pace of the industry average, positions KuCoin at the forefront of price discovery for new markets and forming early opportunities for the next wave of digital assets.",
+    ],
+    url: "https://www.coindesk.com/research/kucoin-hits-record-market-share-as-2025-volumes-outpace-crypto-market",
+  },
 ];
