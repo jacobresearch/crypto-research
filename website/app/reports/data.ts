@@ -240,4 +240,18 @@ export const protocolResearch: ProtocolReport[] = [
     ],
     url: "https://www.coindesk.com/research/the-definitive-stablecoin-landscape-series-north-america",
   },
+  {
+    slug: "digital-assets-quarterly-review-q1-2026",
+    title: "Digital Assets: Quarterly Review and Outlook Q1",
+    date: "Apr 2026",
+    description: [
+      "Digital assets struggled in Q1 2026, driven down by tight macro, geopolitical uncertainty, and weak institutional flows. Our report examines what went wrong, what went right, and what's next — including the growing institutional appetite for crypto.",
+      "The CoinDesk 80 Index outperformed major benchmarks in Q1, declining just 16.5% against Bitcoin's 22.1% drop. Ten of its constituents finished the quarter in positive territory, led by HYPE (+43.8%), MORPHO (+40.9%), AXS (+40.3%), and TAO (+39.9%).",
+      "Ethereum ETFs recorded net outflows every single month of Q1. Aggregate redemptions reached $758M across the quarter, a notably weaker institutional demand picture than Bitcoin despite both assets declining.",
+      "Morgan Stanley launched its Bitcoin Trust ($MSBT) on April 8th at a 0.14% fee, undercutting both BlackRock and Grayscale. Major institutions are still entering the market, not consolidating around existing products.",
+      "Solana peer-to-peer stablecoin volume hit a new all-time high of $832B in Q1, even as its token price fell 33.2%. On-chain payment activity is growing independently of price performance.",
+      "The halving cycle suggests headwinds may persist. Bitcoin's October 2025 peak near $126K and the subsequent decline are consistent with the historical 18 to 24 month post-ATH correction pattern, pointing to late 2026 as a potential transition point into the next accumulation phase.",
+    ],
+    url: "https://www.coindesk.com/research/digital-assets-quarterly-review-and-outlook-q1",
+  },
 ];
