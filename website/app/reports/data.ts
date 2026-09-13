@@ -267,4 +267,13 @@ export const protocolResearch: ProtocolReport[] = [
     ],
     url: "https://www.coindesk.com/research/the-evolution-of-the-crypto-cex-landscape-a-case-study-on-binance",
   },
+  {
+    slug: "digital-assets-quarterly-review-q2-2026",
+    title: "Digital Assets: Quarterly Review and Outlook Q2",
+    date: "Jul 2026",
+    description: [
+      "Digital assets posted a third consecutive quarter of losses in Q2 2026, the longest losing streak since the 2022 bear market, as institutional capital rotated into AI equities and Bitcoin ETFs recorded their largest quarterly outflow since launch. Our report examines what drove the divergence, where structural adoption continued regardless, and what Q3 signals to watch.",
+    ],
+    url: "https://www.coindesk.com/research/digital-assets-quarterly-review-and-outlook-q2",
+  },
 ];
