@@ -215,4 +215,16 @@ export const protocolResearch: ProtocolReport[] = [
     ],
     url: "https://www.coindesk.com/research/goplus-security-h2-2025",
   },
+  {
+    slug: "digital-assets-etp-landscape",
+    title: "Digital Assets ETP Landscape: Past, Present and Future",
+    date: "Feb 2026",
+    description: [
+      "Digital asset ETPs have entered a new phase of institutional adoption, surpassing $250B at their peak as regulatory clarity accelerates product expansion and index-based innovation.",
+      "Digital asset ETP assets surged past $250B at their peak following U.S. spot Bitcoin ETF approvals, with $184B in AUM at year-end 2025 and the U.S. accounting for nearly 80% of global assets.",
+      "The market remains concentrated, with Bitcoin-based products representing 78.2% of total AUM ($144B), while Ethereum-based products account for $26.5B.",
+      "More than 125 digital asset ETP filings are pending, signalling a shift toward broader asset coverage and multi-asset, index-based products.",
+    ],
+    url: "https://www.coindesk.com/research/digital-assets-etp-landscape-past-present-and-future",
+  },
 ];
