@@ -25,17 +25,16 @@ export default function Home() {
 
   return (
     <>
-      {/* HERO */}
-      <section className="max-w-3xl mx-auto px-6 pt-20 pb-28">
+      {/* EYEBROW */}
+      <section className="max-w-3xl mx-auto px-6 pt-14 pb-10">
         <h1
-          className="text-6xl md:text-7xl leading-tight mb-6"
+          className="text-2xl mb-1"
           style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
         >
-          Tracking<br />Narratives.
+          Tracking Narratives.
         </h1>
-        <p className="text-lg text-[#555] max-w-xl leading-relaxed">
-          Research Analyst covering digital assets, macro markets, and emerging
-          financial narratives.
+        <p className="text-sm text-[#888]">
+          Research Analyst — digital assets & macro.
         </p>
       </section>
 
@@ -44,7 +43,7 @@ export default function Home() {
       </div>
 
       {/* LATEST */}
-      <section className="max-w-3xl mx-auto px-6 py-20">
+      <section className="max-w-3xl mx-auto px-6 py-14">
         <h2
           className="text-2xl mb-2"
           style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
