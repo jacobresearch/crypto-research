@@ -1,27 +1,52 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { allReports, makeSlug, seriesMeta } from "./reports/data";
+import { allReports, makeSlug, seriesMeta, protocolResearch } from "./reports/data";
 
 export const metadata: Metadata = {
   title: "Jacob Joseph — Research Analyst",
 };
 
-const monthOrder = [
-  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
-];
+type LatestItem = {
+  key: string;
+  href: string;
+  category: string;
+  title: string;
+  summary: string;
+  timestamp: number;
+};
 
-function getLatestReports(n = 3) {
-  return allReports()
-    .sort((a, b) => {
-      if (b.year !== a.year) return b.year - a.year;
-      return monthOrder.indexOf(b.month) - monthOrder.indexOf(a.month);
-    })
+function getLatestItems(n = 5): LatestItem[] {
+  const monthly: LatestItem[] = allReports().map((r) => {
+    const slug = makeSlug(r.series, r.month, r.year);
+    return {
+      key: slug,
+      href: `/reports/${slug}`,
+      category: seriesMeta[r.series].label,
+      title: `${r.month} ${r.year}`,
+      summary: r.insight,
+      timestamp: new Date(`1 ${r.month} ${r.year}`).getTime(),
+    };
+  });
+
+  const protocol: LatestItem[] = protocolResearch.map((r) => ({
+    key: r.slug,
+    href: `/reports/${r.slug}`,
+    category: "Protocol Research",
+    title: r.title,
+    summary:
+      r.description[0].length > 140
+        ? `${r.description[0].slice(0, 140)}…`
+        : r.description[0],
+    timestamp: new Date(`1 ${r.date}`).getTime(),
+  }));
+
+  return [...monthly, ...protocol]
+    .sort((a, b) => b.timestamp - a.timestamp)
     .slice(0, n);
 }
 
 export default function Home() {
-  const latest = getLatestReports();
+  const latest = getLatestItems(5);
 
   return (
     <>
@@ -54,21 +79,19 @@ export default function Home() {
 
         <div className="space-y-8">
           {latest.map((r) => {
-            const { label } = seriesMeta[r.series];
-            const slug = makeSlug(r.series, r.month, r.year);
             return (
-              <Link key={slug} href={`/reports/${slug}`} className="group block">
+              <Link key={r.key} href={r.href} className="group block">
                 <p className="text-xs font-medium text-[#2D4A6B] uppercase tracking-wide mb-1">
-                  {label}
+                  {r.category}
                 </p>
                 <h3
                   className="text-xl mb-2 group-hover:text-[#2D4A6B] transition-colors"
                   style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
                 >
-                  {r.month} {r.year}
+                  {r.title}
                 </h3>
                 <p className="text-sm text-[#555] leading-relaxed max-w-xl">
-                  {r.insight}
+                  {r.summary}
                 </p>
               </Link>
             );
