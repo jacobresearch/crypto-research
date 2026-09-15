@@ -276,4 +276,17 @@ export const protocolResearch: ProtocolReport[] = [
     ],
     url: "https://www.coindesk.com/research/digital-assets-quarterly-review-and-outlook-q2",
   },
+  {
+    slug: "stablecoin-landscape-asia-pacific",
+    title: "The Definitive Stablecoin Landscape Series: Asia Pacific",
+    date: "Sep 2026",
+    description: [
+      "As stablecoins move into regulated finance, APAC is becoming a key proving ground. This report maps the region's rules, use cases, and RLUSD's role.",
+      "Stablecoins are entering their institutionalization era, moving from crypto-native liquidity tools into core financial infrastructure for payments, treasury, settlement, and tokenized capital markets. APAC is emerging as a key proving ground for this transition, accounting for 51.2% of identified stablecoin payment volume.",
+      "Within this shift, APAC has become the world's largest regional hub for identified stablecoin payment activity, supported by fragmented currency corridors, large cross-border trade flows, advanced digital-payment systems, and increasingly active regulatory hubs in Singapore, Hong Kong, Japan, and Australia.",
+      "The region's stablecoin market remains liquidity-led, but is gradually diversifying. USDT's share of identified APAC stablecoin payment volume declined from 98% at the start of 2025 to 91% in July 2026, as regulated use cases develop and institutions place greater emphasis on compliance, custody, transparency, and integration.",
+      "RLUSD provides a case study in the compliance-first stablecoin model that may become more relevant as APAC adoption moves into regulated financial workflows. Its position within Ripple's broader payments, custody, liquidity, and treasury infrastructure creates potential routes into institutional use cases across cross-border settlement, treasury funding, and tokenized-asset workflows.",
+    ],
+    url: "https://www.coindesk.com/research/the-definitive-stablecoin-landscape-series-asia-pacific",
+  },
 ];
