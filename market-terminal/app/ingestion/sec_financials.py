@@ -36,6 +36,8 @@ REVENUE_CONCEPTS = [
 ]
 CAPEX_CONCEPTS = [
     "PaymentsToAcquirePropertyPlantAndEquipment",
+    # Amazon uses this tag instead, and stopped using the one above around 2017.
+    "PaymentsToAcquireProductiveAssets",
 ]
 CONCEPTS_OF_INTEREST = REVENUE_CONCEPTS + CAPEX_CONCEPTS
 

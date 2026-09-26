@@ -41,3 +41,6 @@ jobs:
 
       - name: Calculate rates signals
         run: python -m app.signals.rates
+
+      - name: Calculate hyperscaler signals
+        run: python -m app.signals.hyperscaler
