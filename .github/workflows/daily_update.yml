@@ -33,5 +33,8 @@ jobs:
       - name: Ingest equities
         run: python -m app.ingestion.equities
 
+      - name: Ingest Hugging Face model snapshot
+        run: python -m app.ingestion.huggingface
+
       - name: Calculate rates signals
         run: python -m app.signals.rates
