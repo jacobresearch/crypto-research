@@ -17,10 +17,13 @@ DATABASE_URL = os.environ["DATABASE_URL"]
 
 app = FastAPI(title="Market Terminal API")
 
-# TODO: restrict allow_origins to the website's actual domain once verified end to end.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://www.jacobjoseph.net",
+        "https://jacobjoseph.net",
+        "http://localhost:3000",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
