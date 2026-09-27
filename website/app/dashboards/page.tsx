@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SignalChart, { type ChartSeries } from "@/components/SignalChart";
 
 export const revalidate = 3600;
@@ -233,6 +234,31 @@ const CHART_SIGNALS = SIGNAL_ORDER.filter(
   (name) => name !== "rate_move_decomposition",
 ) as Exclude<SignalName, "rate_move_decomposition">[];
 
+function DashboardTabs({ active }: { active: "rates" | "ai-value-chain" }) {
+  const tabs = [
+    { key: "rates", href: "/dashboards", label: "Rates & Macro" },
+    { key: "ai-value-chain", href: "/dashboards/ai-value-chain", label: "AI Value Chain" },
+  ] as const;
+
+  return (
+    <div className="flex gap-6 text-sm mb-10">
+      {tabs.map((tab) => (
+        <Link
+          key={tab.key}
+          href={tab.href}
+          className={
+            tab.key === active
+              ? "text-[#1A1A1A] font-medium"
+              : "text-[#555] hover:text-[#1A1A1A] transition-colors"
+          }
+        >
+          {tab.label}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
 export default async function DashboardsPage() {
   let latestByName: Record<string, SignalPoint> = {};
   const historyByName: Record<SignalName, ChartPoint[]> = {} as Record<SignalName, ChartPoint[]>;
@@ -261,9 +287,11 @@ export default async function DashboardsPage() {
       <h1 className="text-4xl mb-2" style={serif}>
         Dashboards
       </h1>
-      <p className="text-sm text-[#888] mb-12">
+      <p className="text-sm text-[#888] mb-6">
         Live data, on-chain analytics, and market dashboards.
       </p>
+
+      <DashboardTabs active="rates" />
 
       {fetchError ? (
         <div className="border border-dashed border-[#E0DDD8] px-8 py-12 text-center">
