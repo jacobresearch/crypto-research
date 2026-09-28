@@ -289,4 +289,17 @@ export const protocolResearch: ProtocolReport[] = [
     ],
     url: "https://www.coindesk.com/research/the-definitive-stablecoin-landscape-series-asia-pacific",
   },
+  {
+    slug: "goplus-security-h1-2026",
+    title: "GoPlus Security H1 2026: Execution Security for AI Agents",
+    date: "Sep 2026",
+    description: [
+      "As AI agents gain the ability to act autonomously with access to data and financial tools, GoPlus Security is repositioning its infrastructure to secure machine-to-machine interactions, not just human users.",
+      "AI has cut the cost of vulnerability discovery — some models can scan a smart contract for roughly $1.22 — even as autonomous systems gain access to greater volumes of data and financial tools. Web3 recorded 165 hacks in H1 2026, more than double 2025 levels, underscoring the shift in the threat landscape.",
+      "GoPlus's H1 2026 strategy centers on three product areas: DeepScan for smart-contract auditing, Axora for agent information-flow governance, and SafuSkill for AI software supply-chain security. The firm frames its services as continuously consumed, machine-native infrastructure rather than periodic, human-triggered protection.",
+      "Usage metrics point to accelerating infrastructure adoption: average daily API calls reached 16 million across 57 supported blockchain networks, SafuSkill aggregated over 113,000 skills, and 63 Skill Coins have launched. Locker TVL stood at $26.1M, with token locking up 185% to 30,127 tokens, while $GPS gained 76.8% over the half.",
+      "With autonomous agents capable of executing hundreds of billions of daily actions, the report frames this emerging class of machine users as a substantial new demand driver for continuous security monitoring and policy enforcement.",
+    ],
+    url: "https://www.coindesk.com/research/goplus-security-h1-2026",
+  },
 ];
