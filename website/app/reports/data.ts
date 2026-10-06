@@ -123,6 +123,7 @@ export const stablecoinsReport: Report[] = [
   { month: "Jun", year: 2026, url: "https://data.coindesk.com/reports/stablecoins-tokenized-assets-report-june-2026", insight: "Tokenized-equities on-chain volume hit a new all-time high, +145% to $3.86bn.", kind: "web" },
   { month: "Jul", year: 2026, url: "https://data.coindesk.com/reports/stablecoins-tokenized-assets-report-july-2026", insight: "Tokenized-asset market cap surged 11.5% to $32.1bn, the highest month-end level on-chain.", kind: "web" },
   { month: "Aug", year: 2026, url: "https://data.coindesk.com/reports/stablecoins-tokenized-assets-report-august-2026", insight: "Stablecoin sector market cap rose 1.19% to $311bn — the first monthly increase in three months.", kind: "web" },
+  { month: "Sep", year: 2026, url: "https://data.coindesk.com/reports/stablecoins-tokenized-assets-report-september-2026", insight: "Stablecoin market cap rose 1.29% to $313bn as stablecoin trading volume topped $1T for the first time since March.", kind: "web" },
 ];
 
 export function makeSlug(series: SeriesKey, month: string, year: number) {
